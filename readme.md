@@ -18,7 +18,9 @@ v1.0， 最老的版本，
  ![](https://raw.githubusercontent.com/zhangchengmcbedrock/zhangchengmcbedrock/main/res/Screenshot%202023-02-03%20220357.png)
  4.选择打开特定网页或一组网页，  
  5，点击添加新网页  
+ ![](https://raw.githubusercontent.com/zhangchengmcbedrock/zhangchengmcbedrock/main/res/Screenshot%202023-02-03%20220431.png)  
  6,输入file:///+你解压的目录的index.html  
+ ![](https://raw.githubusercontent.com/zhangchengmcbedrock/zhangchengmcbedrock/main/res/Screenshot%202023-02-03%20220636.png)
  7.完成  
  
  

@@ -13,6 +13,7 @@ v1.0， 最老的版本，
  （Google Chrome）
  1.点击右上角的3个点，  
  2.点击设置  
+ ![](https://raw.githubusercontent.com/zhangchengmcbedrock/zhangchengmcbedrock/main/res/Screenshot%202023-02-03%20220257.png)  
  3.点击启动时  
  4.选择打开特定网页或一组网页，  
  5，点击添加新网页  

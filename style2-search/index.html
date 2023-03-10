@@ -9,9 +9,47 @@ body {
   background-color: lightblue;
 }
 </style>
-</head>
-  <body><h1>新建标签页</h1><br><hr>  
-<a href="http://www.baidu.com">百度</a> <br> 
+<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 260px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid #01af63;
+			}
+			
+			form .search {
+				
+				width: 90px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 40px;
+				background-color: #FB7299;
+				color: #FFFFFF;
+			}
+		.container {
+width: 500px;
+height: 50px;
+margin: 100px auto;
+}
+		</style>
+    </head>
+  <body><h1>新建标签页</h1><div class="container">
+		<form target="_blank" method="get" action="https://www.baidu.com/s">
+			<input type="text" placeholder="请输入关键词" name="word" class="text" />
+			<input type="submit" value="搜索" class="search">
+		</form>
+		</div><br><hr>  
+
+      <a href="http://www.baidu.com">百度</a> <br> 
 <a href="http://cn.bing.com">BING</a> <br>
 <a href="https://www.google.com">google</a> <br>
 <a href="http:://sogou.com">搜狗</a> <br>      

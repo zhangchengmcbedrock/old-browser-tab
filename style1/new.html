@@ -1,55 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>无标题文档</title>
-<style>.container {
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			
+			form .text {
+				display: inline-block;
+				border: 0;
+				width: 260px;
+				height: 35px;
+				font-size: 14px;
+				outline: none;
+				
+				border: 2px solid #01af63;
+			}
+			
+			form .search {
+				
+				width: 90px;
+				height: 38px;
+				border: 0;
+				outline: none;
+				cursor: pointer;
+				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+				text-align: center;
+				line-height: 40px;
+				background-color: #FB7299;
+				color: #FFFFFF;
+			}
+		.container {
 width: 500px;
 height: 50px;
 margin: 100px auto;
 }
-
-.parent {
-width: 100%;
-height: 42px;
-top: 4px;
-position: relative;
-}
-
-.parent>input:first-of-type {
-
-width: 380px;
-height: 40px;
-border: 1px solid #00AEEC;
-font-size: 16px;
-outline: none;
-}
-
-.parent>input:first-of-type:focus {
-border: 1px solid #317ef3;
-padding-left: 10px;
-}
-
-.parent>input:last-of-type {
-
-width: 100px;
-height: 44px;
-position: absolute;
-background: #FB7299;
-border: 1px solid #317ef3;
-color: #fff;
-font-size: 16px;
-outline: none;
-}</style>
+		</style>
 	</head>
-
-<body>
-<div class="container">
-<form action="" class="parent">
-<input type="text">
-<input type="button" value="搜索">
-</form>
-</div>
+	<body>
+		<h1>百度</h1><br>
+		<div class="container">
+		<form target="_blank" method="get" action="https://www.baidu.com/s">
+			<input type="text" placeholder="请输入关键词" name="word" class="text" />
+			<input type="submit" value="搜索" class="search">
+		</form>
+		</div>
+			<br>
 <br><hr><a href="index.html">返回旧版</a>
 	</body>
 </html>

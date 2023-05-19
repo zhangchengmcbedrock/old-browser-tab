@@ -6,47 +6,72 @@
 		<style type="text/css">
 			body {
             background: url(https://api.dujin.org/bing/1366.php) no-repeat center / cover fixed;
-        }
-			form .text {
-				display: inline-block;
-				border: 0;
-				width: 260px;
-				height: 35px;
-				font-size: 14px;
-				outline: none;
-				
-				border: 2px solid #01af63;
 			}
 			
-			form .search {
-				
-				width: 90px;
-				height: 38px;
-				border: 0;
-				outline: none;
-				cursor: pointer;
-				/*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
-				text-align: center;
-				line-height: 40px;
-				background-color: #FB7299;
-				color: #FFFFFF;
+			h1
+			{color: white
 			}
-		.container {
-width: 500px;
-height: 50px;
-margin: 100px auto;
+			
+			form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
 }
+label {
+  margin-right: 8px;
+  font-size: 30px;
+  color: white;
+}
+input[type="text"] {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+}
+button[type="submit"] {
+  padding: 8px 12px;
+  background-color: #00A1D6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button[type="submit"]:hover {
+  background-color: #FB7299;
+}
+			span{
+				margin-right: 8px;
+  font-size: 20px;
+			 color:white;		
+			}
 		</style>
 	</head>
 	<body>
-		<h1>bing</h1><br>
-		<div class="container">
-		<form target="_blank" method="get" action="https://cn.bing.com/search?q=u">
-			<input type="text" placeholder="请输入关键词" name="word" class="text" />
-			<input type="submit" value="搜索" class="search">
-		</form>
-		</div>
+		<div align="center">
+		  <h1 id="1"><strong>必应 搜索</strong></h1>
+		  <br>
+		<form action="https://www.bing.com/search" method="get">
+          <label for="search">搜索：</label>
+          <input type="text" id="search" name="q">
+          <button type="submit">搜索</button>
+        </form>
+	<br>
 			<br>
-<br><hr><a href="index.html">返回旧版</a>
-	</body>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<span id="jinrishici-sentence"><strong>白云一片去悠悠，青枫浦上不胜愁。</strong></span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+		</div>
+</body>
 </html>

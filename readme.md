@@ -1,5 +1,5 @@
 这是一个起始页(使用html编写)  
-在线版/网页版zhangchengmcbedrock.github.io/style1/baidu.html       
+在线版/网页版https://zhangchengmcbedrock.github.io/style1/baidu.html       
 
 更新日志：  
 v2.2，大更新 style1和style2更新能百度搜索的搜索框     

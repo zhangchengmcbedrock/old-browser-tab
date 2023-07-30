@@ -1,0 +1,40 @@
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #search-input {
+    width: 300px;
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  #search-button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  #search-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* 默认样式 */
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  /* 深色模式样式 */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  }

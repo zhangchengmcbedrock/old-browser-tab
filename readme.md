@@ -5,6 +5,7 @@
 
  如何安装    
  [Firefox浏览器](https://github.com/zhangchengmcbedrock/old-browser-tab/blob/main/Firefox.md)     
+  [chrome浏览器](https://github.com/zhangchengmcbedrock/old-browser-tab/blob/main/chrome.md)     
  
  
  1.先下载文件 .zip文件。  

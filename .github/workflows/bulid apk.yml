@@ -28,6 +28,15 @@ jobs:
         cordova platform add android
         cordova build android
 
+    - name: Modify MainActivity.java
+      run: |
+        sed -i 's#super.loadUrl(Config.getStartUrl());#super.loadUrl("file:///android_asset/www/index.html");#' MyApp/platforms/android/app/src/main/java/com/example/myapp/MainActivity.java
+
+    - name: Build modified APK
+      run: |
+        cd MyApp
+        cordova build android
+
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:

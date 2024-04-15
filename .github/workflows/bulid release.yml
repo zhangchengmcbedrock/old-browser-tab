@@ -1,13 +1,10 @@
 name: Zip Files
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -15,8 +12,7 @@ jobs:
     - name: Zip style1 folder
       run: |
         cd style1
-        zip -r style1.zip .
-        mv style1.zip ../
+        Compress-Archive * -DestinationPath ..\style1.zip
       working-directory: ${{ github.workspace }}
 
     - name: Upload style1 zip
@@ -28,8 +24,7 @@ jobs:
     - name: Zip server package folder
       run: |
         cd server_package
-        zip -r server_package.zip .
-        mv server_package.zip ../
+        Compress-Archive * -DestinationPath ..\server_package.zip
       working-directory: ${{ github.workspace }}
 
     - name: Upload server package zip

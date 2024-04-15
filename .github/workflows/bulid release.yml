@@ -9,6 +9,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Ensure style1 folder exists
+      run: |
+        mkdir style1
+      if: steps.ensure-style1-folder.outputs.result == '1'
+
     - name: Zip style1 folder
       run: |
         cd style1
@@ -20,6 +25,11 @@ jobs:
       with:
         name: style1
         path: style1.zip
+
+    - name: Ensure server package folder exists
+      run: |
+        mkdir server_package
+      if: steps.ensure-server-package-folder.outputs.result == '1'
 
     - name: Zip server package folder
       run: |

@@ -1,0 +1,39 @@
+name: Zip Files
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Zip style1 folder
+      run: |
+        cd style1
+        zip -r style1.zip .
+        mv style1.zip ../
+      working-directory: ${{ github.workspace }}
+
+    - name: Upload style1 zip
+      uses: actions/upload-artifact@v2
+      with:
+        name: style1
+        path: style1.zip
+
+    - name: Zip server package folder
+      run: |
+        cd server_package
+        zip -r server_package.zip .
+        mv server_package.zip ../
+      working-directory: ${{ github.workspace }}
+
+    - name: Upload server package zip
+      uses: actions/upload-artifact@v2
+      with:
+        name: server_package
+        path: server_package.zip
